@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - MindSpark Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: black; /* 🖤 background */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul li {
+      margin: 0 20px;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    header ul li a:hover,
+    header ul li a.active {
+      color: gold;
+    }
+
+    /* About Card */
+    .container {
+  background: purple; /* 💜 card */
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 1100px;   /* bada width */
+  width: 90%;          /* responsive */
+  margin: 120px auto;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  animation: fadeInScale 1s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* ✅ Height fix */
+  height: auto;         /* jitna content utni height */
+  overflow: hidden;     /* scroll/overflow nahi hoga */
+}
+    /* Hover Effect */
+    .container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8);
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: gold;
+    }
+
+    .container p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    .container ul {
+      text-align: left;
+      margin: 20px auto;
+      display: inline-block;
+    }
+
+    .container ul li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    /* Animation */
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+   <header style="position: fixed; top: 0; left: 0; width: 100%; background: black; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; z-index: 1000; box-sizing: border-box;">
+  <!-- Logo -->
+  <div style="font-size: 1.8rem; font-weight: bold; color: yellow;">
+    MindSpark
+  </div>
+
+  <!-- Navigation Links -->
+  <nav style="display: flex;">
+    <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 40px;">Home</a>
+    <a href="about.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 20px;">About</a>
+    <a href="result.html" style="color: white; text-decoration: none; font-weight: bold;">Result</a>
+  </nav>
+</header>
+  <!-- About Section -->
+  <div class="container">
+    <h2>About MindSpark Quiz</h2>
+    <p>
+      Welcome to <b>MindSpark Quiz</b>!  
+      This interactive quiz platform is built for learners, students, and knowledge seekers.  
+      Our mission is to make learning fun, engaging, and challenging through quizzes in two major categories:
+      <span style="color: gold;">Programming</span> and 
+      <span style="color: gold;">General Knowledge</span>.
+    </p>
+
+    <h3>✨ Features</h3>
+    <ul>
+      <li>🎯 <b>Two Categories:</b> Programming (Web, Python, Java) & General Knowledge</li>
+      <li>📝 <b>MCQs with Options:</b> Test your knowledge with well-structured multiple-choice questions</li>
+      <li>📊 <b>Score Tracking:</b> Get your result instantly at the end of the quiz</li>
+      <li>⚡ <b>Interactive UI:</b> Simple, elegant, and mobile-friendly design</li>
+      <li>🚀 <b>Learning + Fun:</b> Improves problem-solving and reasoning skills</li>
+    </ul>
+
+    <h3>💡 Why MindSpark?</h3>
+    <p>
+      MindSpark is more than just a quiz — it’s a spark to your mind!  
+      Whether you are preparing for exams, practicing coding basics, or just want to
+      refresh your general knowledge, this quiz will keep you sharp and motivated.
+    </p>
+
+    <p style="margin-top:20px; font-style:italic; color:#ddd;">
+      "The more you practice, the sharper your mind becomes.  
+      Keep learning, keep growing!"
+    </p>
+  </div>
+</body>
+</html>

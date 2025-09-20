@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindSpark Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header style="position: fixed; top: 0; left: 0; width: 100%; background: black; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; z-index: 1000; box-sizing: border-box;">
+  <div style="font-size: 1.8rem; font-weight: bold; color: yellow;">
+    MindSpark
+  </div>
+  <nav style="display: flex;">
+    <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 40px;">Home</a>
+    <a href="about.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 20px;">About</a>
+    <a href="result.html" style="color: white; text-decoration: none; font-weight: bold;">Result</a>
+  </nav>
+</header>
+
+   <div class="wrapper">
+  <div class="container">
+    <h1>Welcome to <span class="highlight">MindSpark Quiz</span></h1>
+    <p>Select a category and start the quiz!</p>
+
+    <select id="category">
+      <option value="programming">Programming</option>
+      <option value="gk">General Knowledge</option>
+    </select>
+
+    <button onclick="startQuiz()">Start Quiz</button>
+    <br><br><br><br>
+    <p style="color: rgb(98, 192, 179);">
+  Welcome to <strong style="color: white;">MindSpark Quiz !</strong>
+  Sharpen your mind, challenge your knowledge, and have fun exploring exciting questions in Programming, General Knowledge, and more. 
+  Are you ready to test yourself and discover how much you really know?
+</p>
+  </div>
+  </div>
+
+  <script>
+    function startQuiz() {
+      const category = document.getElementById("category").value;
+      window.location.href = `quiz.html?category=${category}`;
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
